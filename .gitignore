@@ -2,3 +2,18 @@ md/
 .idea/
 .claude/
 .venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Binarios FFmpeg (generados por setup / download_ffmpeg.py)
+bin/windows/*.exe
+bin/linux/ffmpeg
+bin/linux/ffprobe
+
+# Contenido de usuario en Input/ y Output/ (mantener solo .gitkeep)
+Input/*
+Output/*
+!Input/.gitkeep
+!Output/.gitkeep
