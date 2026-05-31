@@ -148,4 +148,5 @@ FlacDrop/
 
 ## 📄 License
 
-[MIT](LICENSE)
+FlacDrop is licensed under the [MIT License](LICENSE).  
+This project bundles [FFmpeg](https://ffmpeg.org/legal.html), which is licensed under the LGPL 2.1+.
