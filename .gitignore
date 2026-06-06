@@ -1,19 +1,41 @@
 md/
 .idea/
 .claude/
-.venv/
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Binarios FFmpeg (generados por setup / download_ffmpeg.py)
-bin/windows/*.exe
-bin/linux/ffmpeg
-bin/linux/ffprobe
+# Virtual environments
+.venv/
+venv/
+env/
 
-# Contenido de usuario en Input/ y Output/ (mantener solo .gitkeep)
+# Bundled FFmpeg binaries and download temporaries
+bin/windows/*
+!bin/windows/.gitkeep
+bin/linux/*
+!bin/linux/.gitkeep
+bin/ffmpeg_tmp.*
+
+# User input and generated output
 Input/*
-Output/*
 !Input/.gitkeep
+Output/*
 !Output/.gitkeep
+
+# Logs
+*.log
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
